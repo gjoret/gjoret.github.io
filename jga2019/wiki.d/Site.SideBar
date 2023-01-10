@@ -1,0 +1,42 @@
+version=pmwiki-2.2.72 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:62.0) Gecko/20100101 Firefox/62.0
+author=
+charset=UTF-8
+csum=
+host=176.147.132.126
+name=Site.SideBar
+passwdedit=@_site_edit
+rev=10
+targets=Main.HomePage,Main.Programme,Main.Participants,Main.Comites,Main.Historique
+text=*[[Main/HomePage | Accueil]]%0a*[[Main/Programme | Programme]]%0a*[[Main/Participants | Participants]]%0a*[[Main/Comites | Comités]]%0a*[[Main/Historique | Historique ]]
+time=1538912967
+author:1538912967=
+diff:1538912967:1531311595:=2,3d1%0a%3c *[[Main/Programme | Programme]]%0a%3c *[[Main/Participants | Participants]]%0a4a3%0a> *[[Main/Participants | Participants]]%0a
+host:1538912967=176.147.132.126
+author:1531311595=
+diff:1531311595:1521021978:=3d2%0a%3c *[[Main/Participants | Participants]]%0a
+host:1531311595=195.83.81.247
+author:1521021978=
+diff:1521021978:1520851320:=3c3,9%0a%3c *[[Main/Historique | Historique ]]%0a\ No newline at end of file%0a---%0a> *[[Main/Historique | Historique ]]%0a> *Sponsors%0a> %25height=30px%25http://oc.inpg.fr/conf/jga2018/cnrs.jpg%0a> %0a> %25height=30px%25http://oc.inpg.fr/conf/jga2018/gdr_im.jpg%0a> %0a> %25height=30px%25http://oc.inpg.fr/conf/jga2018/anr.gif%0a\ No newline at end of file%0a
+host:1521021978=195.83.81.247
+author:1520851320=
+diff:1520851320:1520847438:=5,9c5,9%0a%3c %25height=30px%25http://oc.inpg.fr/conf/jga2018/cnrs.jpg%0a%3c %0a%3c %25height=30px%25http://oc.inpg.fr/conf/jga2018/gdr_im.jpg%0a%3c %0a%3c %25height=30px%25http://oc.inpg.fr/conf/jga2018/anr.gif%0a\ No newline at end of file%0a---%0a> %25height=50px%25http://oc.inpg.fr/conf/jga2018/cnrs.jpg%0a> %0a> %25height=50px%25http://oc.inpg.fr/conf/jga2018/gdr_im.jpg%0a> %0a> %25height=50px%25http://oc.inpg.fr/conf/jga2018/anr.gif%0a\ No newline at end of file%0a
+host:1520851320=195.83.81.247
+author:1520847438=
+diff:1520847438:1424429740:=1,9c1,4%0a%3c *[[Main/HomePage | Accueil]]%0a%3c *[[Main/Comites | Comités]]%0a%3c *[[Main/Historique | Historique ]]%0a%3c *Sponsors%0a%3c %25height=50px%25http://oc.inpg.fr/conf/jga2018/cnrs.jpg%0a%3c %0a%3c %25height=50px%25http://oc.inpg.fr/conf/jga2018/gdr_im.jpg%0a%3c %0a%3c %25height=50px%25http://oc.inpg.fr/conf/jga2018/anr.gif%0a\ No newline at end of file%0a---%0a> *[[Main/HomePage | Home]]%0a> *[[Main/Research]]%0a> *[[Main/Teaching]]%0a> *[[Main/Links]]%0a
+host:1520847438=195.83.81.247
+author:1424429740=
+diff:1424429740:1424429704:=1c1%0a%3c *[[Main/HomePage | Home]]%0a---%0a> *[[Main/HomePage]]%0a
+host:1424429740=195.83.81.96
+author:1424429704=
+diff:1424429704:1424255548:=1d0%0a%3c *[[Main/HomePage]]%0a
+host:1424429704=195.83.81.96
+author:1424255548=
+diff:1424255548:1424255536:=1,3c1,3%0a%3c *[[Main/Research]]%0a%3c *[[Main/Teaching]]%0a%3c *[[Main/Links]]%0a---%0a> [[Main/Research]]%0a> [[Main/Teaching]]%0a> [[Main/Links]]%0a
+host:1424255548=195.83.81.96
+author:1424255536=
+diff:1424255536:1424255399:=1,3c1,13%0a%3c [[Main/Research]]%0a%3c [[Main/Teaching]]%0a%3c [[Main/Links]]%0a---%0a> %25sidehead%25 [[Main/Research]]%0a> * [[Main/Research#papers | Publications]]%0a> * [[Main/Research#manu | Manuscripts]]  %0a> * [[Main/Research#conf | Conferences]]  %0a> * [[Main/Research#other | Recent talks]]  %0a> %0a> %25sidehead%25 [[Main/Teaching]]%0a> * [[Main/Teaching#beamer | Beamer]]%0a> * [[Main/Teaching#history | History]]%0a> %0a> %25sidehead%25 [[Main/Links]]%0a> * [[Main/Links#research | Research]]%0a> * [[Main/Links#others | Others]]%0a\ No newline at end of file%0a
+host:1424255536=195.83.81.96
+author:1424255399=
+diff:1424255399:1125550800:=1,13c1,19%0a%3c %25sidehead%25 [[Main/Research]]%0a%3c * [[Main/Research#papers | Publications]]%0a%3c * [[Main/Research#manu | Manuscripts]]  %0a%3c * [[Main/Research#conf | Conferences]]  %0a%3c * [[Main/Research#other | Recent talks]]  %0a%3c %0a%3c %25sidehead%25 [[Main/Teaching]]%0a%3c * [[Main/Teaching#beamer | Beamer]]%0a%3c * [[Main/Teaching#history | History]]%0a%3c %0a%3c %25sidehead%25 [[Main/Links]]%0a%3c * [[Main/Links#research | Research]]%0a%3c * [[Main/Links#others | Others]]%0a\ No newline at end of file%0a---%0a> * [[Main/HomePage]]%0a> * [[Main/WikiSandbox]]%0a> %0a> %25sidehead%25 [[PmWiki/PmWiki]]%0a> * [[PmWiki/Initial Setup Tasks]]  %0a> * [[PmWiki/Basic Editing]]%0a> * [[PmWiki/Documentation Index]]%0a> * [[PmWiki/FAQ | PmWiki FAQ ]]%0a> * [[PmWiki/PmWikiPhilosophy]]%0a> * [[PmWiki/Release Notes]]%0a> * [[PmWiki/ChangeLog]]%0a> %0a> %25sidehead%25 [[http://www.pmwiki.org | pmwiki.org ]]%0a> * [[Cookbook:Cookbook | Cookbook (addons) ]]%0a> * [[Cookbook:Skins | Skins (themes) ]]%0a> * [[PITS:PITS | PITS (issue tracking) ]]%0a> * [[PmWiki/Mailing Lists]]%0a> %0a> %25right%25 [-[[Site.SideBar?action=edit | edit SideBar]]-]%0a\ No newline at end of file%0a
+host:1424255399=195.83.81.96
