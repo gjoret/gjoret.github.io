@@ -1,0 +1,337 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Publications - Gwenaël Joret&#x27;s homepage</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-473d3f6f.css">
+        <link rel="stylesheet" href="css/general-2459343d.css">
+        <link rel="stylesheet" href="css/chrome-ae938929.css">
+        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex-696842cf.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc-c323ffdd.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Gwenaël Joret&#x27;s homepage</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="publications"><a class="header" href="#publications">Publications</a></h1>
+<ul>
+<li><a href="https://arxiv.org/pdf/2502.04177">Shallow brambles</a> (with N. Bousquet, W. Cames van Batenburg, L. Esperet, and P. Micek). Preprint.</li>
+<li><a href="https://arxiv.org/pdf/2412.13893">Erdős-Pósa property of cycles that are far apart</a> (with V. Dujmović, P. Micek, and P. Morin). Preprint.</li>
+<li><a href="https://arxiv.org/pdf/2407.09477">Integer programs with nearly totally unimodular matrices: the cographic case</a> (with M. Aprile, S. Fiorini, S. Kober, M. T. Seweryn, S. Weltge, and Y. Yuditsky). Extended abstract in proc. of SODA 2025.</li>
+<li><a href="https://arxiv.org/pdf/2407.05936">Planar graphs in blowups of fans</a> (with M. Distel, V. Dujmović, P. Micek, P. Morin, and D. R. Wood). Extended abstract in proc. of SODA 2025.</li>
+<li><a href="https://arxiv.org/pdf/2403.17568">A Caro-Wei bound for induced linear forests in graphs</a> (with R. Petit). <i>SIAM Journal on Discrete Mathematics</i>, to appear.</li>
+<li><a href="https://arxiv.org/pdf/2307.02816">The grid-minor theorem revisited</a> (with V. Dujmović, R. Hickingbotham, J. Hodor, H. La, P. Micek, P. Morin, C. Rambaud, and D. R. Wood). <i>Combinatorica</i>, to appear. Extended abstract in proc. of SODA 2024.</li>
+<li><a href="https://arxiv.org/pdf/1902.06473">Information-theoretic lower bounds for quantum sorting</a> (with J. Cardinal and J. Roland). Preprint.</li>
+<li><a href="https://arxiv.org/pdf/2403.06370">Tight bound for the Erdős-Pósa property of tree minors</a> (with V. Dujmović, P. Micek, and P. Morin). <i>Combinatorics, Probability, and Computing</i>, <b>34</b>/2:321–325, 2025.</li>
+<li><a href="https://arxiv.org/pdf/2106.05947">Integer programs with bounded subdeterminants and two nonzeros per row</a> (with S. Fiorini, S. Weltge, and Y. Yuditsky). <i>Journal of the ACM</i>, <b>72</b>/1:Article 3, 2025. Extended abstract in proc. of FOCS 2021.</li>
+<li><a href="https://arxiv.org/pdf/2308.11950">Cliquewidth and dimension</a> (with P. Micek, M. Pilipczuk, and B. Walczak). Extended abstract in proc. of SODA 2024.</li>
+<li><a href="https://arxiv.org/pdf/2306.03621">Pathwidth vs cocircumference</a> (with M. Briański and M. T. Seweryn). <i>SIAM Journal on Discrete Mathematics</i>, <b>38</b>/1:857–866, 2024.</li>
+<li><a href="https://arxiv.org/pdf/2303.14970">The excluded tree minor theorem revisited</a> (with V. Dujmović, R. Hickingbotham, P. Micek, P. Morin, and D. R. Wood). <i>Combinatorics, Probability, and Computing</i>, <b>33</b>:85–90, 2024.</li>
+<li><a href="https://arxiv.org/pdf/2302.12633">Neighborhood complexity of planar graphs</a> (with C. Rambaud). <i>Combinatorica</i>, <b>44</b>:1115–1148, 2024.  * <a href="https://arxiv.org/pdf/2302.02995">Tight bound on treedepth in terms of pathwidth and longest path</a> (with M. Hatzel, P. Micek, M. Pilipczuk, T. Ueckerdt, and B. Walczak). <i>Combinatorica</i>, <b>44</b>:417–427, 2024.</li>
+<li><a href="https://arxiv.org/pdf/2212.08739">Product structure extension of the Alon–Seymour–Thomas theorem</a> (with M. Distel, V. Dujmović, D. Eppstein, R. Hickingbotham, P. Micek, P. Morin, M. T. Seweryn, and D. R. Wood). <i>SIAM Journal on Discrete Mathematics</i>, <b>38</b>/3:2095–2107, 2024.</li>
+<li><a href="https://arxiv.org/pdf/2212.02388">Bounded-degree planar graphs do not have bounded-degree product structure</a> (with V. Dujmović, P. Micek, P. Morin, and D. R. Wood). <i>Electronic Journal of Combinatorics</i>, <b>31</b>/2:P2.51, 2024.</li>
+<li><a href="https://arxiv.org/pdf/2212.10998">Edge separators for graphs excluding a minor</a> (with W. Lochet and M. T. Seweryn). <i>Electronic Journal of Combinatorics</i>, <b>30</b>/4:P4.12, 2023.</li>
+<li><a href="https://arxiv.org/pdf/2211.11410">Treedepth vs circumference</a> (with M. Briański, K. Majewski, P. Micek, M. T. Seweryn, and R. Sharma). <i>Combinatorica</i>, <b>43</b>:659–664, 2023.</li>
+<li><a href="https://arxiv.org/pdf/2010.05779">Sparse universal graphs for planarity</a> (with L. Esperet and P. Morin). <i>Journal of the London Mathematical Society</i>, <b>108</b>/4:1333–1357, 2023.</li>
+<li><a href="https://arxiv.org/pdf/2008.00779">Approximating pathwidth for graphs of small treewidth</a> (with C. Groenland, W. Nadara, and B. Walczak). <i>ACM Transactions on Algorithms</i>, <b>19</b>/2:1–19, 2023. Extended abstract in proc. of SODA 2021.</li>
+<li><a href="http://arxiv.org/pdf/2102.10061">Improved bounds for weak coloring numbers</a> (with P. Micek). <i>Electronic Journal of Combinatorics</i>, <b>29</b>/1:P1.60, 2022.</li>
+<li><a href="http://arxiv.org/pdf/2003.13777">Subgraph densities in a surface</a> (with T. Huynh and D. R. Wood). <i>Combinatorics, Probability, and Computing</i>, <b>31</b>/5:812–839, 2022.</li>
+<li><a href="http://arxiv.org/pdf/2002.00496">Excluding a ladder</a> (with T. Huynh, P. Micek, M. T. Seweryn, and P. Wollan). <i>Combinatorica</i>, <b>42</b>:405–432, 2022.</li>
+<li><a href="https://arxiv.org/pdf/2106.11945">Smaller extended formulations for spanning tree polytopes in minor-closed classes and beyond</a> (with M. Aprile, S. Fiorini, T. Huynh, and D. R. Wood). <i>Electronic Journal of Combinatorics</i>, <b>28</b>/4:P4.47, 2021.</li>
+<li><a href="http://arxiv.org/pdf/2006.11353">Tight bounds on the clique chromatic number</a> (with P. Micek, B. Reed, and M. Smid). <i>Electronic Journal of Combinatorics</i>, <b>28</b>/3:P3.51, 2021.</li>
+<li><a href="https://arxiv.org/pdf/2003.04280">Adjacency labelling for planar graphs (and beyond)</a> (with V. Dujmović, L. Esperet, C. Gavoille, P. Micek, and P. Morin). <i>Journal of the ACM</i>, <b>68</b>/6:Article 42, 2021. Extended abstract in proc. of FOCS 2020.</li>
+<li><a href="http://arxiv.org/pdf/2001.08860">Notes on graph product structure theory</a> (with Z. Dvořák, T. Huynh, C.-H. Liu, and D. R. Wood). In: {Wood D.R., de Gier J., Praeger C.E., Tao T.} (eds) 2019-20 MATRIX Annals. MATRIX Book Series, vol 4, 513–533, 2021. Springer.</li>
+<li><a href="https://arxiv.org/pdf/2001.04517">Packing and covering balls in graphs excluding a minor</a> (with N. Bousquet, W. Cames van Batenburg, L. Esperet, W. Lochet, C. Muller, and F. Pirot). <i>Combinatorica</i>, <b>41</b>:299–318, 2021.</li>
+<li><a href="https://arxiv.org/pdf/1904.02951">Unavoidable minors for graphs with large ℓp-dimension</a> (with S. Fiorini, T. Huynh, and C. Muller). <i>Discrete and Computational Geometry</i>, <b>66</b>:301–343, 2021.</li>
+<li><a href="http://arxiv.org/pdf/2006.04113">Two lower bounds for <span style="font-style:italic">p</span>-centered colorings</a> (with L. Dubois, G. Perarnau, M. Pilipczuk, and F. Pitois). <i>Discrete Mathematics and Theoretical Computer Science</i>, 2020.</li>
+<li><a href="https://arxiv.org/pdf/1912.07965">Erdős-Pósa from ball packing</a> (with W. Cames van Batenburg and A. Ulmer). <i>SIAM Journal on Discrete Mathematics</i>, <b>34</b>/3:1609–1619, 2020.</li>
+<li><a href="https://arxiv.org/pdf/1911.12471">Large independent sets in triangle-free cubic graphs: beyond planarity</a> (with W. Cames van Batenburg and J. Goedgebeur). <i>Advances in Combinatorics</i>, P7, 45 pp, 2020.</li>
+<li><a href="https://arxiv.org/pdf/1908.06300">The stable set problem in graphs with bounded genus and bounded odd cycle packing number</a> (with M. Conforti, S. Fiorini, T. Huynh, and S. Weltge). Extended abstract in proc. of SODA 2020.</li>
+<li><a href="https://arxiv.org/pdf/1907.11429">Revisiting a theorem by Folkman on graph colouring</a> (with M. Bonamy, P. Charbit, O. Defrain, A. Lagoutte, V. Limouzy, L. Pastor, and J.-S. Sereni). <i>Electronic Journal of Combinatorics</i>, <b>27</b>/1:P1.56, 2020.</li>
+<li><a href="https://arxiv.org/pdf/1904.05269">Planar graphs have bounded nonrepetitive chromatic number</a> (with V. Dujmović, L. Esperet, B. Walczak, and D. R. Wood). <i>Advances in Combinatorics</i>, P5, 11 pp, 2020.</li>
+<li><a href="https://arxiv.org/pdf/1904.04791">Planar graphs have bounded queue-number</a> (with V. Dujmović, P. Micek, P. Morin, T. Ueckerdt, and D. R. Wood). <i>Journal of the ACM</i>, <b>67</b>/4:Article 22, 2020. Extended abstract in proc. of FOCS 2019.</li>
+<li><a href="https://arxiv.org/pdf/1810.08314">Minor-closed graph classes with bounded layered pathwidth</a> (with V. Dujmović, D. Eppstein, P. Morin, and D. R. Wood). <i>SIAM Journal on Discrete Mathematics</i>, <b>34</b>/3:1693–1709, 2020.</li>
+<li><a href="http://arxiv.org/pdf/1804.06104">Progress on the adjacent vertex distinguishing edge colouring conjecture</a> (with W. Lochet). <i>SIAM Journal on Discrete Mathematics</i>, <b>34</b>/4:2221–2238, 2020.</li>
+<li><a href="http://arxiv.org/pdf/1801.01833">Seymour’s conjecture on 2-connected graphs of large pathwidth</a> (with T. Huynh, P. Micek, and D. R. Wood). <i>Combinatorica</i>, <b>40</b>:839–868, 2020.</li>
+<li><a href="http://arxiv.org/pdf/1808.10370">Improved approximation algorithms for hitting 3-vertex paths</a> (with S. Fiorini and O. Schaudt). <i>Mathematical Programming</i>, <b>182</b>:355–367, 2020. Extended abstract in proc. of IPCO 2016.</li>
+<li><a href="http://arxiv.org/pdf/1606.01371">Assortment optimisation under a general discrete choice model: A tight analysis of revenue-ordered assortments</a> (with G. Berbeglia). <i>Algorithmica</i>, <b>82</b>/4:681–720, 2020. Extended abstract in proc. of EC 2017.</li>
+<li><a href="http://arxiv.org/pdf/1807.04969">A tight Erdős-Pósa function for planar minors</a> (with W. Cames van Batenburg, T. Huynh, and J.-F. Raymond). <i>Advances in Combinatorics</i>, P2, 33 pp, 2019. Extended abstract in proc. of SODA 2019.</li>
+<li><a href="http://arxiv.org/pdf/1708.05424">Nowhere dense graph classes and dimension</a> (with P. Micek, P. Ossona de Mendez, and V. Wiechert). <i>Combinatorica</i>, <b>39</b>/5:1055–1079, 2019.</li>
+<li><a href="http://arxiv.org/pdf/1710.06282">A tight Erdős-Pósa function for wheel minors</a> (with P. Aboulker, S. Fiorini, T. Huynh, J.-F. Raymond, and I. Sau). <i>SIAM Journal on Discrete Mathematics</i>, <b>32</b>/3:2302–2312, 2018.</li>
+<li><a href="http://arxiv.org/pdf/1703.07871">Burling graphs, chromatic number, and orthogonal tree-decompositions</a> (with S. Felsner, P. Micek, W. T. Trotter, and V. Wiechert). <i>Electronic Journal of Combinatorics</i>, <b>25</b>/1:P1.35, 2018.</li>
+<li><a href="http://arxiv.org/pdf/1701.05639">Orthogonal tree decompositions of graphs</a> (with V. Dujmović, P. Morin, S. Norin, and D. R. Wood). <i>SIAM Journal on Discrete Mathematics</i>, <b>32</b>/2:839–863, 2018.</li>
+<li><a href="http://arxiv.org/pdf/1612.07540">Planar posets have dimension at most linear in their height</a> (with P. Micek and V. Wiechert). <i>SIAM Journal on Discrete Mathematics</i>, <b>31</b>/4:2754–2790, 2018.</li>
+<li><a href="http://arxiv.org/pdf/1605.04730">K_4-minor-free induced subgraphs of sparse connected graphs</a> (with D. R. Wood). <i>SIAM Journal on Discrete Mathematics</i>, <b>32</b>/1:123–147, 2018.</li>
+<li><a href="http://arxiv.org/pdf/1507.01120">Sparsity and dimension</a> (with P. Micek and V. Wiechert). <i>Combinatorica</i>, <b>38</b>/5:1129–1148, 2018. Extended abstract in proc. of SODA 2016.</li>
+<li><a href="http://arxiv.org/pdf/1604.07976">Smaller extended formulations for the spanning tree polytope of bounded-genus graphs</a> (with S. Fiorini, T. Huynh, and K. Pashkovich). <i>Discrete and Computational Geometry</i>, <b>57</b>/3:757–761, 2017.</li>
+<li><a href="http://arxiv.org/pdf/1511.08054">The excluded minors for isometric realizability in the plane</a> (with S. Fiorini, T. Huynh, and A. Varvitsiotis). <i>SIAM Journal on Discrete Mathematics</i>, <b>31</b>/1:438–453, 2017.</li>
+<li><a href="http://arxiv.org/pdf/1406.3397">On the dimension of posets with cover graphs of treewidth 2</a> (with P. Micek, W. T. Trotter, R. Wang, and V. Wiechert). <i>Order</i>, <b>34</b>/2:185–234, 2017.</li>
+<li><a href="http://arxiv.org/pdf/1601.01886">Pathwidth and nonrepetitive list coloring</a> (with A. Gagol, J. Kozik, and P. Micek). <i>Electronic Journal of Combinatorics</i>, <b>23</b>/4:P4.40, 2016.</li>
+<li><a href="http://arxiv.org/pdf/1301.5271">Tree-width and dimension</a> (with P. Micek, K. G. Milans, W. T. Trotter, B. Walczak, and R. Wang). <i>Combinatorica</i>, <b>36</b>/4:431–450, 2016.</li>
+<li><a href="http://arxiv.org/pdf/1112.5524">Nonrepetitive colouring via entropy compression</a> (with V. Dujmović, J. Kozik, and D. R. Wood). <i>Combinatorica</i>, <b>36</b>/6:661–686, 2016.</li>
+<li><a href="http://arxiv.org/pdf/1211.4853">Reducing the rank of a matroid</a> (with A. Vetta). <i>Discrete Mathematics and Theoretical Computer Science</i>, <b>17</b>/2:143–156, 2015.</li>
+<li><a href="http://arxiv.org/pdf/1208.5589">Hitting all maximal independent sets of a bipartite graph</a> (with J. Cardinal). <i>Algorithmica</i>, <b>72</b>/2:359–368, 2015.</li>
+<li><a href="http://arxiv.org/pdf/1207.3633">Empty pentagons in point sets with collinearities</a> (with J. Barát, V. Dujmović, M. Payne, L. Scharf, D. Schymura, P. Valtr, and D. R. Wood). <i>SIAM Journal on Discrete Mathematics</i>, <b>29</b>/1:198–209, 2015.</li>
+<li><a href="http://arxiv.org/pdf/1303.2487">Coloring planar graphs with three colors and no large monochromatic components</a> (with L. Esperet). <i>Combinatorics, Probability, and Computing</i>, <b>23</b>/4:551–570, 2014.</li>
+<li><a href="http://arxiv.org/pdf/1105.2704">Hitting and harvesting pumpkins</a> (with C. Paul, I. Sau, S. Saurabh, and S. Thomassé). <i>SIAM Journal on Discrete Mathematics</i>, <b>103</b>/1:1363–1390, 2014. Extended abstract in proc. of ESA 2011.</li>
+<li><a href="http://arxiv.org/pdf/0803.0538">A note on the Cops &amp; Robber game on graphs embedded in non-orientable surfaces</a> (with N. E. Clarke, S. Fiorini, and D. O. Theis). <i>Graphs and Combinatorics</i>, <b>30</b>/1:119–124, 2014.</li>
+<li><a href="http://arxiv.org/pdf/1204.5192">Excluded forest minors and the Erdős-Pósa property</a> (with S. Fiorini and D. R. Wood). <i>Combinatorics, Probability, and Computing</i>, <b>22</b>/5:700–721, 2013.</li>
+<li><a href="http://arxiv.org/pdf/1202.2624">A linear-time algorithm for finding a complete graph minor in a dense graph</a> (with V. Dujmović, D. J. Harvey, B. Reed, and D. R. Wood). <i>SIAM Journal on Discrete Mathematics</i>, <b>27</b>/4:1770–1774, 2013.</li>
+<li><a href="http://arxiv.org/pdf/1202.1569">Nonrepetitive colourings of planar graphs with O(log n) colours</a> (with V. Dujmović, F. Frati, and D. R. Wood). <i>Electronic Journal of Combinatorics</i>, <b>20</b>/1:P51, 2013.</li>
+<li><a href="http://arxiv.org/pdf/1107.1953">Boxicity of graphs on surfaces</a> (with L. Esperet). <i>Graphs and Combinatorics</i>, <b>29</b>/3:417–427, 2013.</li>
+<li><a href="http://arxiv.org/pdf/1105.3549">Complete graph minors and the graph minor structure theorem</a> (with D. R. Wood). <i>Journal of Combinatorial Theory, Series B</i>, <b>103</b>/1:61–74, 2013.</li>
+<li><a href="http://arxiv.org/pdf/0909.3221">The Stackelberg minimum spanning tree game on planar and bounded-treewidth graphs</a> (with J. Cardinal, E. D. Demaine, S. Fiorini, I. Newman, and O. Weimann). <i>Journal of Combinatorial Optimization</i>, <b>25</b>/1:19–46, 2013. Extended abstract in proc. of WINE 2009.</li>
+<li><a href="http://arxiv.org/pdf/0911.0086">Sorting under partial information (without the ellipsoid algorithm)</a> (with J. Cardinal, S. Fiorini, R. M. Jungers, and J. I. Munro). <i>Combinatorica</i>, <b>33</b>/6:655–697, 2013. Extended abstract in proc. of STOC 2010.</li>
+<li><a href="http://arxiv.org/pdf/1104.1080">Approximating the balanced minimum evolution problem</a> (with S. Fiorini). <i>Operations Research Letters</i>, <b>40</b>/1:31–35, 2012.</li>
+<li><a href="http://arxiv.org/pdf/1111.2370">An improved bound for First-Fit on posets without two long incomparable chains</a> (with V. Dujmović and D. R. Wood). <i>SIAM Journal on Discrete Mathematics</i>, <b>26</b>/3:1068–1075, 2012.</li>
+<li><a href="http://arxiv.org/pdf/1109.1602">Nordhaus-Gaddum for treewidth</a> (with D. R. Wood). <i>European Journal of Combinatorics</i>, <b>33</b>/4:488–490, 2012.</li>
+<li><a href="http://arxiv.org/pdf/1005.0895">Small minors in dense graphs</a> (with S. Fiorini, D. O. Theis, and D. R. Wood). <i>European Journal of Combinatorics</i>, <b>33</b>/6:1226–1245, 2012.</li>
+<li><a href="http://arxiv.org/pdf/1002.1270">Trees with given stability number and minimum number of stable sets</a> (with V. Bruyère and H. Mélot). <i>Graphs and Combinatorics</i>, <b>28</b>/2:167–187, 2012.</li>
+<li><a href="http://arxiv.org/pdf/1008.2928">Minimum entropy combinatorial optimization problems</a> (with J. Cardinal and S. Fiorini). <i>Theory of Computing Systems</i>, <b>51</b>/1:4–21, 2012. Extended abstract in proc. of CiE 2009.</li>
+<li><a href="http://arxiv.org/pdf/1006.5704">First-Fit is linear on posets excluding two long incomparable chains</a> (with K. G. Milans). <i>Order</i>, <b>28</b>/3:455–464, 2011.</li>
+<li><a href="http://arxiv.org/pdf/1110.2272">Disproof of the list Hadwiger conjecture</a> (with J. Barát and D. R. Wood). <i>Electronic Journal of Combinatorics</i>, <b>18</b>/1:R232, 2011.</li>
+<li><a href="http://arxiv.org/pdf/0906.4142">On the maximum number of cliques in a graph embedded in a surface</a> (with V. Dujmović, G. Fijavž, T. Sulanke, and D. R. Wood). <i>European Journal of Combinatorics</i>, <b>32</b>/8:1244–1252, 2011.</li>
+<li><a href="http://arxiv.org/pdf/0812.0320">Stackelberg network pricing is hard to approximate</a>. <i>Networks</i>, <b>57</b>/2:117–120, 2011.</li>
+<li><a href="http://arxiv.org/pdf/cs/0703019">The Stackelberg minimum spanning tree game</a> (with J. Cardinal, E. D. Demaine, S. Fiorini, S. Langerman, I. Newman, and O. Weimann). <i>Algorithmica</i>, <b>59</b>/2:129–144, 2011. Extended abstract in proc. of WADS 2007.</li>
+<li><a href="http://arxiv.org/pdf/0911.4366">Hitting diamonds and growing cacti</a> (with S. Fiorini and U. Pietropaoli). Extended abstract in proc. of IPCO 2010.</li>
+<li><a href="http://arxiv.org/pdf/0907.1421">Irreducible triangulations are small</a> (with D. R. Wood). <i>Journal of Combinatorial Theory, Series B</i>, <b>100</b>/5:446–455, 2010.</li>
+<li><a href="http://arxiv.org/pdf/0811.2572">An efficient algorithm for partial order production</a> (with J. Cardinal, S. Fiorini, R. M. Jungers, and J. I. Munro). <i>SIAM Journal on Computing</i>, <b>39</b>/7:2927–2940, 2010. Extended abstract in proc. of STOC 2009.</li>
+<li><a href="http://arxiv.org/pdf/0804.4145">The Cops and Robber game on graphs with forbidden (induced) subgraphs</a> (with M. Kamiński and D. O. Theis). <i>Contributions to Discrete Mathematics</i>, <b>5</b>/2:40–51, 2010.</li>
+<li><a href="http://arxiv.org/pdf/0809.3724">Weighted graphs defining facets: a connection between stable set and linear ordering polytopes</a> (with J.-P. Doignon and S. Fiorini). <i>Discrete Optimization</i>, <b>6</b>/1:1–9, 2009.</li>
+<li><a href="http://arxiv.org/pdf/0712.3956">On a theorem of Sewell and Trotter</a> (with S. Fiorini). <i>European Journal of Combinatorics</i>, <b>30</b>/2:425–428, 2009.</li>
+<li><a href="http://arxiv.org/pdf/0802.1237">Minimum entropy orientations</a> (with J. Cardinal and S. Fiorini). <i>Operations Research Letters</i>, <b>36</b>/6:680–683, 2008.</li>
+<li><a href="./papers/mixed.pdf">Well-balanced orientations of mixed graphs</a> (with A. Bernáth). <i>Information Processing Letters</i>, <b>106</b>/4:149–151, 2008.</li>
+<li><a href="./papers/turan.pdf">Turán’s theorem and k-connected graphs</a> (with N. Bougard). <i>Journal of Graph Theory</i>, <b>58</b>/1:1–13, 2008.</li>
+<li><a href="./papers/entropy-setcover.pdf">Tight results on minimum entropy set cover</a> (with J. Cardinal and S. Fiorini). <i>Algorithmica</i>, <b>51</b>/1:49–60, 2008. Extended abstract in proc. of APPROX 2006.</li>
+<li><a href="./papers/entropy-coloring.pdf">Minimum entropy coloring</a> (with J. Cardinal and S. Fiorini). <i>Journal of Combinatorial Optimization</i>, <b>16</b>/4:361–377, 2008. Extended abstract in proc. of ISAAC 2005.</li>
+<li><a href="./papers/facets-JMP.pdf">Facets of the linear ordering polytope: a unification for the fence family through weighted graphs</a> (with J.-P. Doignon and S. Fiorini). <i>Journal of Mathematical Psychology</i>, <b>50</b>/3:251–262, 2006.</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="contact.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="contact.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-c2a407aa.js"></script>
+
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-abc7f01d.js"></script>
+        <script src="book-a0b12cfe.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>
